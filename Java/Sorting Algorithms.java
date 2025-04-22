@@ -5,28 +5,26 @@ class Main {
         int[] initialArray = {4, 5, 1, 0, 1, 2, 10, 9, 7, 7, 11, -10,   Integer.MAX_VALUE, Integer.MIN_VALUE, -2, 0};
         long startTime, endTime;
         
-        //----------------------------------------------------------
+        // BUBBLE SORT------------------------------------------------
         int[] toBeBubbleSortedArray = Arrays.copyOf(initialArray, initialArray.length);
         startTime  = System.currentTimeMillis();
         bubbleSort(toBeBubbleSortedArray);
         endTime = System.currentTimeMillis();
         System.out.printf("Bubble sorted array- %s in time- %d\n", Arrays.toString(toBeBubbleSortedArray), endTime - startTime);
         
-        //------------------------------------------------------------
+        // SELECTION SORT---------------------------------------------
         int[] toBeSelectionSortedArray = Arrays.copyOf(initialArray, initialArray.length);
         startTime  = System.currentTimeMillis();
         selectionSort(toBeSelectionSortedArray);
         endTime = System.currentTimeMillis();
         System.out.printf("Selection sorted array- %s in time- %d\n", Arrays.toString(toBeSelectionSortedArray), endTime - startTime);
         
-        //------------------------------------------------------------
+        // MERGE SORT------------------------------------------------=
         int[] toBeMergeSortedArray = Arrays.copyOf(initialArray, initialArray.length);
         startTime = System.currentTimeMillis();
         int[] mergeSortedArray = mergeSort(toBeMergeSortedArray);
         endTime = System.currentTimeMillis();
         System.out.printf("Merge sorted array- %s in time- %d\n", Arrays.toString(mergeSortedArray), endTime - startTime);
-        
-        // System.out.println(Arrays.toString(initialArray));
     }
     
     public static void bubbleSort(int[] arr){
