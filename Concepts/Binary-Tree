@@ -1,0 +1,21 @@
+Definition: Any Node can have from 0 to 2 nodes as child
+
+Types-
+• Full Binary Tree: Every node has either 0 or 2 children. [5, 7, 8]  
+• Complete Binary Tree: All levels are fully filled except possibly the last, which is filled from left to right. [5, 9]  
+• Perfect Binary Tree: Every level is completely filled, and all leaves are at the same depth. [5]  
+• Balanced Binary Tree: The height of the left and right subtrees of any node differs by at most 1. [5]  
+• Skewed Binary Tree: A tree where most nodes have only one child (either left or right). [10, 11, 12]  
+• Binary Search Tree (BST): Each node's left child has a value less than or equal to the node, and the right child has a value greater than or equal to the node. [13, 14, 15, 16]  
+• AVL Tree: A self-balancing BST where the height difference between left and right subtrees is always at most 1. [15]  
+• Red-Black Tree: A self-balancing BST where nodes have an extra bit (often interpreted as color) to maintain balance. [15]  
+• Degenerate Binary Tree: A tree where each parent node has only one child, resembling a linked list. [14]
+
+Perfect Binary Tree- 
+- No Of Nodes: 2^h - 1 [h = height of the binary tree considering height of only root node tree is 1].
+- No Of Nodes In Left/Right Sub Tree + Root Node: 2^(h-1) - 1 + 1[for the root node] => 2^(h-1).
+
+Traversal- 
+- In Order: LEFT - ROOT - RIGHT
+- Pre Order: ROOT - LEFT - RIGHT
+- Post Order: LEFT - RIGHT - ROOT
